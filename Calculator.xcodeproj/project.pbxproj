@@ -13,6 +13,7 @@
 		6AA7BA871BA0F8FE00FD8B83 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA7BA861BA0F8FE00FD8B83 /* Images.xcassets */; };
 		6AA7BA8A1BA0F8FE00FD8B83 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AA7BA881BA0F8FE00FD8B83 /* LaunchScreen.xib */; };
 		6AA7BA961BA0F8FE00FD8B83 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA7BA951BA0F8FE00FD8B83 /* CalculatorTests.swift */; };
+		6AA7BAA01BA4458200FD8B83 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA7BA9F1BA4458200FD8B83 /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		6AA7BA8F1BA0F8FE00FD8B83 /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA7BA941BA0F8FE00FD8B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AA7BA951BA0F8FE00FD8B83 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
+		6AA7BA9F1BA4458200FD8B83 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,9 @@
 		6AA7BA7C1BA0F8FE00FD8B83 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				6AA7BA7F1BA0F8FE00FD8B83 /* AppDelegate.swift */,
 				6AA7BA811BA0F8FE00FD8B83 /* ViewController.swift */,
 				6AA7BA831BA0F8FE00FD8B83 /* Main.storyboard */,
-				6AA7BA861BA0F8FE00FD8B83 /* Images.xcassets */,
-				6AA7BA881BA0F8FE00FD8B83 /* LaunchScreen.xib */,
+				6AA7BA9F1BA4458200FD8B83 /* CalculatorBrain.swift */,
 				6AA7BA7D1BA0F8FE00FD8B83 /* Supporting Files */,
 			);
 			path = Calculator;
@@ -90,6 +90,9 @@
 		6AA7BA7D1BA0F8FE00FD8B83 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6AA7BA861BA0F8FE00FD8B83 /* Images.xcassets */,
+				6AA7BA881BA0F8FE00FD8B83 /* LaunchScreen.xib */,
+				6AA7BA7F1BA0F8FE00FD8B83 /* AppDelegate.swift */,
 				6AA7BA7E1BA0F8FE00FD8B83 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +164,7 @@
 				TargetAttributes = {
 					6AA7BA791BA0F8FE00FD8B83 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = QYR6RPTFN2;
 					};
 					6AA7BA8E1BA0F8FE00FD8B83 = {
 						CreatedOnToolsVersion = 6.4;
@@ -212,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AA7BAA01BA4458200FD8B83 /* CalculatorBrain.swift in Sources */,
 				6AA7BA821BA0F8FE00FD8B83 /* ViewController.swift in Sources */,
 				6AA7BA801BA0F8FE00FD8B83 /* AppDelegate.swift in Sources */,
 			);
@@ -342,9 +347,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +360,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -411,6 +422,7 @@
 				6AA7BA9B1BA0F8FE00FD8B83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6AA7BA9C1BA0F8FE00FD8B83 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +431,7 @@
 				6AA7BA9E1BA0F8FE00FD8B83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
